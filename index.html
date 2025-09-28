@@ -17,35 +17,33 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-lg-6 col-md-8 col-cm-4 mx-auto">
-          <div style="width:100%; background-color:#ffffff; padding: 10px; height:120px;">
-        <!-- картинка обтекает текст слева -->
-            <img style="float:left; margin:10px; width:200px; height:200px;" src="лого строй прозр фон 30.03.png" alt="Описание картинки для скрин-ридеров и поисковиков">
-        <!-- этот блок, как положено блочному элементу по умолчанию, займет всю оставшуюся ширину родительского элемента -->
-            <div style="background-color:#ffffff; padding:10px;">
-              <nav>
-                <ul>
-                  <li><a href="#fragment1" style="color: black;">Ссылка 1</a></li>
-                  <li><a href="#table" style="color: black;">Ссылка 2</a></li>
-                  <li><a href="#form" style="color: black;">Ссылка 3</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="site-title">
-              <h1 style="color: black;">Anya Picmi</h1>
-            </div>
-          </div>
+    <header class=".header">
+      <nav class="nav">
+        <div class="logo">
+      <!-- картинка обтекает текст слева -->
+          <img style="float:left; margin:10px; width:100px; height:100px;" src="лого строй прозр фон 30.03.png" alt="Описание картинки для скрин-ридеров и поисковиков">
         </div>
-      </div>
-    </div>
-    <div class="container textarea">
-      <div class="row">
-        <div class="col-lg-6 col-md-8 col-cm-4 mx-auto">
-            <h2 style="color: rgb(201, 172, 134)">
-              Маркированный список гиперссылок
-            </h2>
+      <!-- этот блок, как положено блочному элементу по умолчанию, займет всю оставшуюся ширину родительского элемента -->
+              <ul class="nav-menu">
+                <li><a href="#fragment1" style="color: black;">Ссылка 1</a></li>
+                <li><a href="#table" style="color: black;">Ссылка 2</a></li>
+                <li><a href="#form" style="color: black;">Ссылка 3</a></li>
+              </ul>
+          </div>
+          <div class="site-title">
+            <h1 style="color: black;">Anya Picmi</h1>
+          </div>
+          <div class="menu-toggle" style="color: black; size: 10px;">=</div>
+      </nav>
+    </header>
+ <main class="main">
+  <section class="hero">
+    <p style="font-size: xx-large;">Добро пожаловать</p>
+  </section>
+  <section class="features">
+    <h2 style="color: rgb(201, 172, 134)">
+      Маркированный список гиперссылок
+    </h2>
             <div id="fragment1">
             </div>
           <h3 style="color: rgb(201, 172, 134)">
@@ -190,156 +188,141 @@
               Это фрагмент, на который ведет одна из ссылок выше.
             </p>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="container textarea">
-      <div class="row">
-        <div class="col-lg-6 col-md-8 col-cm-4 mx-auto">
-          <section id="table" style="border-style: dotted; border-color: red;">
-            <h2>Таблица</h2>
-            <table style="border-style: dotted; border-color: red;">
-                <thead>
-                    <tr>
-                        <th>Колонка 1</th>
-                        <th>Колонка 2</th>
-                        <th>Колонка 3</th>
-                        <th>Колонка 4</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Ячейка 1</td>
-                        <td>Ячейка 2</td>
-                        <td>Ячейка 3</td>
-                        <td>Ячейка 4</td>
-                    </tr>
-                    <tr>
-                        <td>Ячейка 5</td>
-                        <td colspan="2">Объединенная ячейка</td>
-                        <td>Ячейка 8</td>
-                    </tr>
-                    <tr>
-                        <td>Ячейка 9</td>
-                        <td>Ячейка 10</td>
-                        <td>Ячейка 11</td>
-                        <td rowspan="2">Объединенная вертикально</td>
-                    </tr>
-                    <tr>
-                        <td>Ячейка 13</td>
-                        <td>Ячейка 14</td>
-                        <td>Ячейка 15</td>
-                    </tr>
-                    <tr>
-                        <td>Ячейка 17</td>
-                        <td>Ячейка 18</td>
-                        <td colspan="2">Объединенная ячейка</td>
-                    </tr>
-                    <tr>
-                        <td>Ячейка 21</td>
-                        <td>Ячейка 22</td>
-                        <td>Ячейка 23</td>
-                        <td>Ячейка 24</td>
-                    </tr>
-                </tbody>
-            </table>
-          </section>
-        </div>
-      </div>
-    </div>
-    <div class="container textarea">
-      <div class="row">
-        <div class="col-lg-6 col-md-8 col-cm-4 mx-auto">
-          <section id="form">
-            <h2 style="color: rgb(201, 172, 134)">Форма</h2>
-  
-            <form action="#" method="post">
-              <fieldset>
-                <legend class="lead text-muted">Личная информация</legend>
-  
-                <label for="fio"">ФИО:*</label>
-                <input type="text" id="fio" name="fio" required style="border-style: dotted; border-color: red;"/>
-  
-                <div></div>
-                <label for="phone">Телефон:*</label>
-                <input type="tel" id="phone" name="phone" required style="border-style: dotted; border-color: red;"/>
-  
-                <div></div>
-                <label for="email">E-mail:*</label>
-                <input type="email" id="email" name="email" required style="border-style: dotted; border-color: red;"/>
-  
-                <div></div>
-                <label for="birthdate">Дата рождения:*</label>
-                <input type="date" id="birthdate" name="birthdate" required style="border-style: dotted; border-color: red;"/>
-              </fieldset>
-  
-              <fieldset>
-                <legend>Пол</legend>
-                <label>
-                  <input type="radio" name="gender" value="male" required/>
-                  Мужской
-                </label>
-                <label>
-                  <input type="radio" name="gender" value="female" /> Женский
-                </label>
-              </fieldset>
-              <fieldset>
-                <legend>Любимый язык программирования</legend>
-                <select name="languages" multiple size="6" style="border-style: dotted; border-color: red;">
-                  <option value="pascal">Pascal</option>
-                  <option value="c">C</option>
-                  <option value="cpp">C++</option>
-                  <option value="javascript">JavaScript</option>
-                  <option value="php">PHP</option>
-                  <option value="python">Python</option>
-                  <option value="java">Java</option>
-                  <option value="haskel">Haskel</option>
-                  <option value="clojure">Clojure</option>
-                  <option value="prolog">Prolog</option>
-                  <option value="scala">Scala</option>
-                </select>
-                <p>
-                  <small class="lead text-muted"
-                    >Для множественного выбора используйте Ctrl+клик (Cmd+клик на
-                    Mac)</small
-                  >
-                </p>
-              </fieldset>
-  
-              <fieldset>
-                <legend>Биография</legend>
-                <textarea
-                style="border-color: red; border-style: dotted;"
-                  name="bio"
-                  rows="5"
-                  cols="50"
-                  placeholder="Расскажите о себе..."
-                ></textarea>
-              </fieldset>
-  
-              <label>
-                <input type="checkbox" name="agreement" required/> С контрактом
-                ознакомлен(а)
-              </label>
-  
-              <br /><br />
-              <button type="submit" class="lead text" style="border-color: red; border-style: dotted;">Сохранить</button>
-            </form>
-          </div>
-        </div>
-      </div>
-          </section>
+  </section>
+  <section class="features">
+    <section id="table" style="border-style: dotted; border-color: red;">
+      <h2>Таблица</h2>
+      <table style="border-style: dotted; border-color: red;" >
+          <thead>
+              <tr>
+                  <th>Колонка 1</th>
+                  <th>Колонка 2</th>
+                  <th>Колонка 3</th>
+                  <th>Колонка 4</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Ячейка 1</td>
+                  <td>Ячейка 2</td>
+                  <td>Ячейка 3</td>
+                  <td>Ячейка 4</td>
+              </tr>
+              <tr>
+                  <td>Ячейка 5</td>
+                  <td colspan="2">Объединенная ячейка</td>
+                  <td>Ячейка 8</td>
+              </tr>
+              <tr>
+                  <td>Ячейка 9</td>
+                  <td>Ячейка 10</td>
+                  <td>Ячейка 11</td>
+                  <td rowspan="2">Объединенная вертикально</td>
+              </tr>
+              <tr>
+                  <td>Ячейка 13</td>
+                  <td>Ячейка 14</td>
+                  <td>Ячейка 15</td>
+              </tr>
+              <tr>
+                  <td>Ячейка 17</td>
+                  <td>Ячейка 18</td>
+                  <td colspan="2">Объединенная ячейка</td>
+              </tr>
+              <tr>
+                  <td>Ячейка 21</td>
+                  <td>Ячейка 22</td>
+                  <td>Ячейка 23</td>
+                  <td>Ячейка 24</td>
+              </tr>
+          </tbody>
+      </table>
+    </section>
+  </section>
+
+         <section id="form" class="features">
+           <h2 style="color: rgb(201, 172, 134)">Форма</h2>
+ 
+           <form action="#" method="post">
+             <fieldset>
+               <legend class="lead text-muted">Личная информация</legend>
+ 
+               <label for="fio">ФИО:*</label>
+               <input type="text" id="fio" name="fio" required style="border-style: dotted; border-color: red;"/>
+ 
+               <div></div>
+               <label for="phone">Телефон:*</label>
+               <input type="tel" id="phone" name="phone" required style="border-style: dotted; border-color: red;"/>
+ 
+               <div></div>
+               <label for="email">E-mail:*</label>
+               <input type="email" id="email" name="email" required style="border-style: dotted; border-color: red;"/>
+ 
+               <div></div>
+               <label for="birthdate">Дата рождения:*</label>
+               <input type="date" id="birthdate" name="birthdate" required style="border-style: dotted; border-color: red;"/>
+             </fieldset>
+ 
+             <fieldset>
+               <legend>Пол</legend>
+               <label>
+                 <input type="radio" name="gender" value="male" required/>
+                 Мужской
+               </label>
+               <label>
+                 <input type="radio" name="gender" value="female" /> Женский
+               </label>
+             </fieldset>
+             <fieldset>
+               <legend>Любимый язык программирования</legend>
+               <select name="languages" multiple size="6" style="border-style: dotted; border-color: red;">
+                 <option value="pascal">Pascal</option>
+                 <option value="c">C</option>
+                 <option value="cpp">C++</option>
+                 <option value="javascript">JavaScript</option>
+                 <option value="php">PHP</option>
+                 <option value="python">Python</option>
+                 <option value="java">Java</option>
+                 <option value="haskel">Haskel</option>
+                 <option value="clojure">Clojure</option>
+                 <option value="prolog">Prolog</option>
+                 <option value="scala">Scala</option>
+               </select>
+               <p>
+                 <small class="lead text-muted"
+                   >Для множественного выбора используйте Ctrl+клик (Cmd+клик на
+                   Mac)</small
+                 >
+               </p>
+             </fieldset>
+ 
+             <fieldset>
+               <legend>Биография</legend>
+               <textarea
+               style="border-color: red; border-style: dotted;"
+                 name="bio"
+                 rows="5"
+                 cols="38"
+                 placeholder="Расскажите о себе..."
+               ></textarea>
+             </fieldset>
+ 
+             <label>
+               <input type="checkbox" name="agreement" required/> С контрактом
+               ознакомлен(а)
+             </label>
+ 
+             <br /><br />
+             <button type="submit" class="lead text" style="border-color: red; border-style: dotted;">Сохранить</button>
+           </form>
+
+         </section>
+ </main>
   </body>
-  <footer>
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-lg-12 col-md-8 col-cm-4 mx-auto">
-          <h2 style="font-size: 100px; color: rgb(201, 172, 134)">Спасибо за просмотр!</h2>
+  <footer class="footer">
+          <h2 style="font-size: medium; color: rgb(201, 172, 134)">Спасибо за просмотр!</h2>
           <div class="container">
             <p>&copy; Сергей Синица 2023</p>
           </div>
-        </div>
-      </div>
-    </div>
   </footer>
 </html>
